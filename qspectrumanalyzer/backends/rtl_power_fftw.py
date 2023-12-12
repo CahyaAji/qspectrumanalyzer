@@ -2,7 +2,7 @@ import math, shlex
 
 from Qt import QtCore
 
-from qspectrumanalyzer import subprocess
+from qspectrumanalyzer import subproc
 from qspectrumanalyzer.backends import BaseInfo, BasePowerThread
 
 

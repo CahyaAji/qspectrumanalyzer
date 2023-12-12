@@ -3,7 +3,7 @@ import os, sys, shlex, signal
 import numpy as np
 from Qt import QtCore
 
-from qspectrumanalyzer import subprocess
+from qspectrumanalyzer import subproc
 from qspectrumanalyzer.backends import BaseInfo, BasePowerThread
 
 try:
