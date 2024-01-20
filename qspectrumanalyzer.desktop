@@ -1,9 +1,9 @@
 [Desktop Entry]
-Name=QSpectrumAnalyzer
+Name=Spectrum Analyzer
 GenericName=Spectrum analyzer
 Comment=Spectrum analyzer for multiple SDR platforms (PyQtGraph based GUI for soapy_power, hackrf_sweep, rtl_power, rx_power and other backends)
-Exec=qspectrumanalyzer
-Icon=qspectrumanalyzer
+Exec=/home/modf/Apps/wide_spectrum_analyzer/venv/bin/python /home/modf/Apps/wide_spectrum_analyzer/qspectrumanalyzer/__main__.py
+Icon=/home/modf/Apps/wide_spectrum_analyzer/qspectrumanalyzer.ico
 StartupNotify=true
 Terminal=false
 Type=Application

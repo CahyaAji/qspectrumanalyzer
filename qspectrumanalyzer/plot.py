@@ -1,6 +1,7 @@
 import collections, math
 
-from Qt import QtCore, QtGui
+from Qt import QtCore
+from Qt import QtGui
 import pyqtgraph as pg
 
 # Basic PyQtGraph settings
@@ -309,11 +310,6 @@ class WaterfallPlotWidget:
         self.counter += 1
 
         # Create waterfall image on first run
-        # if self.counter == 1:
-        #     self.waterfallImg = pg.ImageItem()
-        #     self.waterfallImg.scale((data_storage.x[-1] - data_storage.x[0]) / len(data_storage.x), 1)
-        #     self.plot.clear()
-        #     self.plot.addItem(self.waterfallImg)
         if self.counter == 1:
             self.waterfallImg = pg.ImageItem()
             tr = QtGui.QTransform()
