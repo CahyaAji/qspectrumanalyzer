@@ -314,7 +314,7 @@ class Ui_QSpectrumAnalyzerMainWindow(object):
 
     def retranslateUi(self, QSpectrumAnalyzerMainWindow):
         _translate = QtCore.QCoreApplication.translate
-        QSpectrumAnalyzerMainWindow.setWindowTitle(_translate("QSpectrumAnalyzerMainWindow", "QSpectrumAnalyzer"))
+        QSpectrumAnalyzerMainWindow.setWindowTitle(_translate("QSpectrumAnalyzerMainWindow", "Spectrum Analyzer"))
         self.menu_File.setTitle(_translate("QSpectrumAnalyzerMainWindow", "&File"))
         self.menu_Help.setTitle(_translate("QSpectrumAnalyzerMainWindow", "&Help"))
         self.controlsDockWidget.setWindowTitle(_translate("QSpectrumAnalyzerMainWindow", "Controls"))
