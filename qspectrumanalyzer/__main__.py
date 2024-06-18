@@ -532,7 +532,41 @@ def main():
         app.setOrganizationName("QSpectrumAnalyzer")
         app.setOrganizationDomain("qspectrumanalyzer.eutopia.cz")
         app.setApplicationName("QSpectrumAnalyzer")
+
+        # scale down bos
+        # Set a smaller font
+        font = app.font()
+        font.setPointSize(12)  # Adjust this value to your needs
+        app.setFont(font)
+
+        # Optionally set a stylesheet for more control over the UI elements
+        app.setStyleSheet("""
+                    QMainWindow {
+                        font-size: 8pt;  /* Set main window font size */
+                    }
+                    QPushButton {
+                        font-size: 8pt;  /* Set button font size */
+                        padding: 2px;    /* Adjust padding for buttons */
+                    }
+                    QLabel {
+                        font-size: 8pt;  /* Set label font size */
+                    }
+                    QSpinBox {
+                        font-size: 8pt;  /* Set spinbox font size */
+                    }
+                    QProgressBar {
+                        font-size: 8pt;  /* Set progress bar font size */
+                    }
+                    /* Add more widget-specific adjustments if needed */
+                """)
+
+        #end scale down
+
         window = QSpectrumAnalyzerMainWindow()
+
+        #scale down again
+        window.resize(800, 600)
+
         sys.exit(app.exec_())
     finally:
         # Unhide console window on Windows (we don't want to leave zombies behind)
