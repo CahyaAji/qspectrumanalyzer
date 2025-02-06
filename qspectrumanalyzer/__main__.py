@@ -493,8 +493,8 @@ class QSpectrumAnalyzerMainWindow(QtWidgets.QMainWindow, Ui_QSpectrumAnalyzerMai
 
     @QtCore.Slot()
     def on_action_About_triggered(self):
-        QtWidgets.QMessageBox.information(self, self.tr("About - QSpectrumAnalyzer"),
-                                          self.tr("QSpectrumAnalyzer {}").format(__version__))
+        QtWidgets.QMessageBox.information(self, self.tr("About"),
+                                          self.tr("Spectrum Analyzer {}").format(__version__))
 
     @QtCore.Slot()
     def on_action_Quit_triggered(self):
@@ -535,37 +535,37 @@ def main():
 
         # scale down bos
         # Set a smaller font
-        font = app.font()
-        font.setPointSize(12)  # Adjust this value to your needs
-        app.setFont(font)
-
-        # Optionally set a stylesheet for more control over the UI elements
-        app.setStyleSheet("""
-                    QMainWindow {
-                        font-size: 8pt;  /* Set main window font size */
-                    }
-                    QPushButton {
-                        font-size: 8pt;  /* Set button font size */
-                        padding: 2px;    /* Adjust padding for buttons */
-                    }
-                    QLabel {
-                        font-size: 8pt;  /* Set label font size */
-                    }
-                    QSpinBox {
-                        font-size: 8pt;  /* Set spinbox font size */
-                    }
-                    QProgressBar {
-                        font-size: 8pt;  /* Set progress bar font size */
-                    }
-                    /* Add more widget-specific adjustments if needed */
-                """)
+        # font = app.font()
+        # font.setPointSize(12)  # Adjust this value to your needs
+        # app.setFont(font)
+        #
+        # # Optionally set a stylesheet for more control over the UI elements
+        # app.setStyleSheet("""
+        #             QMainWindow {
+        #                 font-size: 8pt;  /* Set main window font size */
+        #             }
+        #             QPushButton {
+        #                 font-size: 8pt;  /* Set button font size */
+        #                 padding: 2px;    /* Adjust padding for buttons */
+        #             }
+        #             QLabel {
+        #                 font-size: 8pt;  /* Set label font size */
+        #             }
+        #             QSpinBox {
+        #                 font-size: 8pt;  /* Set spinbox font size */
+        #             }
+        #             QProgressBar {
+        #                 font-size: 8pt;  /* Set progress bar font size */
+        #             }
+        #             /* Add more widget-specific adjustments if needed */
+        #         """)
 
         #end scale down
 
         window = QSpectrumAnalyzerMainWindow()
 
         #scale down again
-        window.resize(800, 600)
+        # window.resize(800, 600)
 
         sys.exit(app.exec_())
     finally:
