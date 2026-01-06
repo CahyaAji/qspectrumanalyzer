@@ -10,3 +10,6 @@ on linux that use python 3.13 up
 -maksimal python versi adalah 3.12
 -install PyQt5 using pip
 - update pyqtgraph in project using pip
+
+
+venv/bin/python qspectrumanalyzer/__main__.py
